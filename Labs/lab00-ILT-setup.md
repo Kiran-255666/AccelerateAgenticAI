@@ -38,7 +38,7 @@ Before you start the lab exercises, you must create a development environment fo
 
 > [!NOTE]
 >
-> Pay-as-you-go with Azure is unavailable for Trial environments. This setting is supported only for Production and Sandbox environments.
+> **Pay-as-you-go with Azure is unavailable for Trial environments. This setting is supported only for Production and Sandbox environments**.
 
 1. Select **Next**. In the **Add Dataverse** panel, set the following:
    - **Language**: leave as it is if already English (United States), otherwise select English (United States) and move to the next field
