@@ -96,7 +96,7 @@ Take a moment to review how the new Copilot Studio experience is organized befor
 
 ## Exercise 2 - Create an agent
 
-In this exercise, you will create an IT support agent for a fictional company called Contoso. The agent will help employees troubleshoot common IT issues and submit support tickets.
+In this exercise, you will create an IT support agent for a fictional company called **Contoso**. The agent will help employees troubleshoot common IT issues and submit support tickets.
 
 ### Task 2.1 – Create the agent
 
@@ -108,13 +108,9 @@ In this exercise, you will create an IT support agent for a fictional company ca
    You are an IT support agent for Contoso. You help employees troubleshoot common IT issues such as password resets, software installation problems, and network connectivity. When you cannot resolve an issue, you help the employee submit a support ticket.
    ```
 
-   > [!NOTE]
-   > In some environments, the build prompt box might not appear on the **Home** page when you access Copilot Studio through the standard URL. If the prompt box is unavailable, make sure the Copilot Studio is opened in the Preview URL `https://copilotstudio.preview.microsoft.com/` and continue with the exercise.
+   ![New Interface](../media/newuiprompt.png)
 
-   > [!NOTE]
-   > The new experience uses your description to automatically generate a set of initial instructions. Review them before continuing.
-
-1. If prompted with clarifying questions, answer them to help the agent generate more accurate instructions. For example:
+1. Select the **(→)** button inside the prompt box. If prompted with clarifying questions, answer them to help the agent generate more accurate instructions. For example:
 
    - If asked how employees submit IT support tickets, choose the option to send a support request email to the IT helpdesk (rather than ServiceNow, Jira, Dynamics 365, or Zendesk).
    - If asked whether the agent should reference a knowledge base, SharePoint site, or website, choose the option indicating no external knowledge source is needed.
