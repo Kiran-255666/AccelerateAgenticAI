@@ -67,7 +67,7 @@ In this exercise, you will create a Dataverse table that will be used as a knowl
 
 1. At the top of the page, check the current environment. If your environment is not selected, click the environment name, find your environment under **Build apps with Dataverse**, and select it.
 
-   ![Select your environment in the Maker portal.](../media/select-powerapps-environment.png)
+   ![Select your environment in the Maker portal.](../media/select-powerapps-environment1.png)
 
 1. In the left-hand navigation in the **Maker portal**, select **Tables**.
 
@@ -102,9 +102,9 @@ In this exercise, you will create a new agent using natural language to answer q
 
 ### Task 2.1 – Create an agent for expense claims
 
-1. Navigate to the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`.
+1. Navigate to the **Copilot Studio** home page `https://copilotstudio.microsoft.com/` and switch back to classic experience
 
-1. At the top of the page, verify that you are working in the environment you want to use for this exercise.
+1. At the top of the page, verify that you are working in the environment you want to just created for this exercise.
 
 1. Select **Agents** in the left-hand navigation.
 
@@ -126,7 +126,7 @@ In this exercise, you will create a new agent using natural language to answer q
    You are an agent that helps employees with expense claims including questions around expense policy and procedures.
    ```
 
-1. Select the **Send** icon.
+1. Select the **(→)** Send icon.
 
    Once your agent has been provisioned, you may proceed with configuring your agent.
 
@@ -137,7 +137,6 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 ### Task 3.1 – Add a document as a knowledge source
 
 1. Open a new browser tab and navigate to `https://raw.githubusercontent.com/Kiran-255666/agentic-ai-azure-ai-foundry-labs/main/text-files/Expenses_Policy.docx` to download the [expenses policy document](https://raw.githubusercontent.com/Kiran-255666/agentic-ai-azure-ai-foundry-labs/main/text-files/Expenses_Policy.docx) locally. This document contains details of the expenses policy for the fictional corporation.
-
 
 1. Return to the **Copilot Studio browser** tab with the agent that you created earlier.
 
