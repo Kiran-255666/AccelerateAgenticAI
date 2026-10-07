@@ -46,14 +46,16 @@ Before you start the lab exercises, you must create a development environment fo
    - **Deploy sample apps and data?**: No
 
 > [!NOTE]
-> **Currency defaults based on your region (for example, INR for India). Enable Dynamics 365 apps is disabled for Trial environments and it's only available for Production or Sandbox environments**.   
-![Environment Save Button.](../media/Save.png)
+> **Currency defaults based on your region (for example, INR for India). Enable Dynamics 365 apps is disabled for Trial environments and it's only available for Production or Sandbox environments**.  
+
+   ![Environment Save Button.](../media/Save.png)
 
 7. Select **Save** and wait until the environment state is **Ready** (use **Refresh** to update the display).
 
 > [!NOTE]
 > **Environment provisioning can take several minutes depending on tenant configuration**.
-![Environment created in the Power Platform Admin center.](../media/environment-created.png)
+
+   ![Environment created in the Power Platform Admin center.](../media/environment-created.png)
 
 ### Task 1.3 - Access Copilot Studio
 
