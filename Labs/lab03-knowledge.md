@@ -136,7 +136,7 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 
 ### Task 3.1 – Add a document as a knowledge source
 
-1. Open a new browser tab and navigate to `https://raw.githubusercontent.com/Kiran-255666/agentic-ai-azure-ai-foundry-labs/main/text-files/Expenses_Policy.docx` to download the [expenses policy document](https://raw.githubusercontent.com/Kiran-255666/agentic-ai-azure-ai-foundry-labs/main/text-files/Expenses_Policy.docx) locally. This document contains details of the expenses policy for the fictional corporation.
+1. Open a new browser tab and navigate to the following link to download the [expenses policy document](https://raw.githubusercontent.com/Kiran-255666/agentic-ai-azure-ai-foundry-labs/main/text-files/Expenses_Policy.docx) locally. The document contains the expenses policy for the fictional corporation.
 
 1. Return to the **Copilot Studio browser** tab with the agent that you created earlier.
 
