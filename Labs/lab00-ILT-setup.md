@@ -21,8 +21,7 @@ Before you start the lab exercises, you must create a development environment fo
    
    ![Environment page's select new.](../media/ami.png)
    
-1. If prompted, choose the option to stay signed in.
-1. Close any pop-up messages that are displayed.
+1. If prompted, choose the option to stay signed in. Close any pop-up messages that are displayed.
 
 ### Task 1.2 - Create a new environment
 
@@ -31,12 +30,13 @@ Before you start the lab exercises, you must create a development environment fo
    ![Environment page's select new.](../media/ClickNew.png)
 1. In the **New environment** panel, set **Type** to Trial and **Region** to the default region shown (a local region provides quicker data access).
    ![Environment page's Type and Region.](../media/TypeRegion.png)
-1. Enter your name in the **Name** field.
+1. Enter your preferred name in the **Name** field.
    ![Environment page's set Your Name.](../media/YourName.png)
 1. Expand **Change default settings**. Under **Add a Dataverse data store?**, select **Yes**.
    ![Environment page's select new.](../media/ToggleYes.png)
+
    > [!NOTE]
-   > Pay-as-you-go with Azure is unavailable for Trial environments — only Production and Sandbox environments support this setting.
+   > Pay-as-you-go with Azure is unavailable for Trial environments. This setting is supported only for Production and Sandbox environments.
 
 1. Select **Next**. In the **Add Dataverse** panel, set the following:
    - **Language**: leave as it is if already English (United States), otherwise select English (United States) and move to the next field
