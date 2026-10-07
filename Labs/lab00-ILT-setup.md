@@ -28,7 +28,7 @@ Before you start the lab exercises, you must create a development environment fo
 3. In the **New environment** panel, set **Type** to Trial and **Region** to the default region shown (a local region provides quicker data access).
    ![Environment page's Type and Region.](../media/TypeRegion.png)
 4. Enter your preferred name in the **Name** field.
-   ![Environment page's set Your Name.](../media/YourName.png)
+   ![Environment page's set Your Name.](../media/YourName1.png)
 5. Expand **Change default settings**. Under **Add a Dataverse data store?**, select **Yes**.
 
    ![Environment page's select new.](../media/ToggleYes.png)
@@ -36,13 +36,15 @@ Before you start the lab exercises, you must create a development environment fo
 > [!NOTE]
 > **Pay-as-you-go with Azure is unavailable for Trial environments. This setting is supported only for Production and Sandbox environments**.
 
-6. Select **Next**. In the **Add Dataverse** panel, set the following:
-   - **Language**: leave as it is if already English (United States), otherwise select English (United States) and move to the next field
+6. Select **Next**. 
+
+7. In the **Add Dataverse** panel, set the following:
+   - **Language**: Leave it as **English (United States)** if it is already selected. Otherwise, select **English (United States)** and move to the next field.
    - **Currency**: leave as default
    - **Security group**: Click **+ Select** and in **Edit security group** find **open access** click **None** and Click **Done**
    ![Environment Done Button.](../media/done.png)
    - **URL**: No changes are required.
-   - **Enable Dynamics 365 apps?**: leave as it is (locked to No), move to the next field
+   - **Enable Dynamics 365 apps?**: leave as it is (locked to **No**), move to the next field
    - **Deploy sample apps and data?**: No
 
 > [!NOTE]
@@ -50,54 +52,52 @@ Before you start the lab exercises, you must create a development environment fo
 
    ![Environment Save Button.](../media/Save.png)
 
-7. Select **Save** and wait until the environment state is **Ready** (use **Refresh** to update the display).
+7. Select **Save** and wait for the environment state to change from **Preparing** to **Ready**. After some time, use **Refresh** to update the status.
 
 > [!NOTE]
 > **Environment provisioning can take several minutes depending on tenant configuration**.
 
-   ![Environment created in the Power Platform Admin center.](../media/environment-created.png)
+   ![Environment created in the Power Platform Admin center.](../media/environment-created1.png)
 
 ### Task 1.3 - Access Copilot Studio
 
 1. In a new browser tab, open **Copilot Studio** https://copilotstudio.microsoft.com/ and sign in if prompted.
 
-   ![Copilot Studio interface.](../media/olduserxp.png)
+2. You will be redirected to the new Copilot Studio UI. This UI has fewer features than the Classic Experience UI. We will use the Classic Experience UI throughout the labs.
 
-   <details>
-   <summary>Does your interface look different? Click here</summary>
-   
    ![Copilot Studio interface.](../media/newuserxp.png)
 
-   Select **...** (More options) at the bottom of the page. Under **Explore**, select **Open Classic Experience**. These labs use the **Classic Experience**.
-   
-   </details>
+3. Select **...** (More options) at the bottom of the page. Under **Explore**, select **Open Classic Experience**, then select **Skip feedback**.
 
-2. Look at the **upper-right corner** of the page. Just to the left of the **Settings** ⚙️ icon, you will see the **Environment Selector** showing your current environment.
+   ![Copilot Studio interface.](../media/newuserxp.png)
+
+4. In the **upper-right corner** of the page, just to the left of the **Settings** ⚙️ icon, locate the **Environment Selector** showing the current environment.
 
    ![Environment.](../media/u1.png)
 
-3. Check the **Environment Selector**. If your *named environment* is already displayed, use it.
+5. Check the **Environment Selector** and make sure the required environment is selected.
 
-   <details>
-   <summary>Can't see your named environment? Click here</summary>
-
-   a. Select the **Environment Selector**.
+6. Select the **Environment Selector**.
 
    ![Environment Selector.](../media/u1.png)
 
-   b. The **Switch environment** menu will open.
+7. The **Switch environment** menu will open.
 
    ![Environment Selector.](../media/u2.png)
 
-   c. Under **Supported environments**, select your **named environment**.
+8. Under **Supported environments**, select your **named environment**.
 
    ![Environment Selector.](../media/u3.png)
 
-   d. Your **named environment** should now be shown in the **Environment Selector**.
+9. Your **named environment** should now be displayed in the **Environment Selector**.
 
    ![Environment Selector.](../media/u4.png)
 
-   </details>
+10. You are now in the correct **environment** and the **Classic Experience** UI is ready for the lab.
+
+> [!TIP]
+>
+> **Remember these steps, as you will use them throughout the labs when you are redirected to the new UI or a different environment.**
 
 ### Task 1.4 - Create a solution
 
