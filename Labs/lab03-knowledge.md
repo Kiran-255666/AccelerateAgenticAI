@@ -171,7 +171,7 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 
 1. For *Name*, enter `Travel, Gift, and Car Expenses | Internal Revenue Service`.
 
-1. For *Description*, enter `This knowledge source contains information on reimbursement of travel expenses.`.
+1. For *Description*, enter `This knowledge source contains information on reimbursement of travel expenses.`
 
 1. Select **Add to agent**.
 > [!NOTE]
