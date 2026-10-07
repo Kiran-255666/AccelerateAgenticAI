@@ -71,7 +71,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 ### Task 1.1 – Create an agent to review insurance claims
 
-1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`, verify that you are in the environment that you want to use for this exercise.
+1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`, verify that you are in the environment that you have created recently for this exercise.
 
 1. Select **Agents** in the left-hand navigation.
 
@@ -279,12 +279,14 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 1. Select **Save**.
 
-### Task 5.2 - Verify trigger type
+### Task 5.2 - Verify Trigger
 
-1. Select the **Trigger** node at the top of the topic. Confirm the trigger type is set to **The agent chooses**.
+1. At the top of the topic, verify that the **Trigger** node is present.
 
-   > [!NOTE]
-   > With generative orchestration enabled, the agent uses this description to decide when to use the topic.
+> [!NOTE]
+>
+> With generative orchestration enabled, the agent uses the topic description to decide when to use the topic.
+
 
 ### Task 5.3 - Add a message node
 
@@ -333,7 +335,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
    `What date and time would you like to book the repair estimate?`
 
-1. Select **Date and time** for **Identify**.
+1. Select **Date and time** for **Identify**. If you have difficulty finding it, use the **search box** in the **brackets** to search for it.
 
    ![Screenshot of Date and Time.](../media/DateandTime.png)
 
