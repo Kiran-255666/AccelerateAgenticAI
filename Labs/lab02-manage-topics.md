@@ -44,7 +44,7 @@ This exercise will take approximately **45** minutes to complete.
 ## Prerequisites
 
 - Have a Microsoft Entra ID account
-- Have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
+- Have a Copilot Studio license or have signed up for a free trial
 - Have access to a Power Platform environment and a solution where you can create agents and related assets.
 - You can use:
   - the environment and **Lab Exercises** solution created in the **ILT Setup** lab, or
@@ -52,7 +52,7 @@ This exercise will take approximately **45** minutes to complete.
 - If you do not already have an environment and solution prepared, complete the steps in the **ILT Setup** lab before continuing.
   
 > [!IMPORTANT]
-> You may notice a new Copilot Studio experience that is currently in preview. These labs use the current Copilot Studio interface, so some steps and screenshots may not match the preview experience. To follow the lab instructions successfully, use the Classic Copilot Studio UI experience throughout these exercises.
+> You may notice a new Copilot Studio experience that is currently in preview. These labs use the current Copilot Studio interface, so some steps and screenshots may not match the preview experience. To follow the lab instructions successfully, use the current Copilot Studio UI throughout these exercises.
 
 ## Key concept: Agent components and behavior
 
@@ -71,15 +71,11 @@ In this exercise, you will create a new agent using natural language to answer q
 
 ### Task 1.1 – Create an agent to review insurance claims
 
-1. Navigate to the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`.
-
-1. Make sure you are in the **Copilot Studio** classic experience. If you are not, switch to the classic experience before proceeding.
-
-1. At the top of the page, verify that you are working in the environment you want to use for this exercise.
+1. In the **Copilot Studio** home page `https://copilotstudio.microsoft.com/`, verify that you are in the environment that you want to use for this exercise.
 
 1. Select **Agents** in the left-hand navigation.
 
-1. In the bottom-left of the *Start building by describing what your agent needs to do* text box, select the **Agent Settings** icon, which is displayed as a **Cog** image.
+1. In the bottom-left of the *Start building by describing what your agent needs to do* text box, select the **Agent Settings** icon, which is displayed as a **⚙️** icon.
 
    ![Screenshot of the agent settings dialog.](../media/agent-settings-dialog.png)
 
@@ -97,7 +93,7 @@ In this exercise, you will create a new agent using natural language to answer q
    You are an agent that assists with reviewing insurance claims including damage assessment details and repair estimates.
    ```
 
-1. Select the **Send** icon.
+1. Select the **Send (→)** icon.
 
    Once your agent has been provisioned, you may proceed with configuring your agent.
 
@@ -182,11 +178,11 @@ In addition to modifying existing nodes, you can use Copilot to add new ones.
 
    ![Screenshot of the message node with an Adaptive Card.](../media/message-node-adaptive-card.png)
 
-1. Select the **Media** box in the Adaptive Card. The Adaptive Card properties should appear on the right of the page.
+1. Select the **Selection Tool** on the left, then select the **Media** box in the Adaptive Card. The Adaptive Card properties should appear on the right side of the page.
 
    ![Screenshot of the Adaptive Card properties.](../media/adaptive-card-properties.png)
 
-   Your Adaptive Card formula should look similar to the one above. If your Adaptive Card differs significantly, you can replace it with this formula:
+   Copilot may generate a different Adaptive Card formula. To ensure consistency, replace the generated formula with the following formula:
 
    ```powerfx
    {
@@ -247,9 +243,9 @@ Enable variables to be accessed by other topics.
 
 1. Select the **Topics** tab.
 
-1. Select the **Customer Details** topic.
+1. Select the **Customer Details** topic. If multiple **Customer Details** topics are listed, select the one with the most recent **Last modified** time.
 
-1. Select **Variables** in the top bar to open the **Variables** pane (you may need to select **More** \> **Variables**).
+1. Select **Variables** in the top bar to open the **Variables** pane.
 
 1. Select and expand **Topic** variables.
 
@@ -306,9 +302,12 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 1. Select the **+** icon under the **Message** node
 
-1. Select **Topic management** \> **Go to another topic** \> **Customer Details**.
+1. Select **Topic management** > **Go to another topic** > **Customer Details**.
 
    ![Screenshot of adding a topic management node.](../media/topic-management-node.png)
+
+   > [!NOTE]
+   > If two **Customer Details** topics are listed, select the **second one** and verify that the resulting node matches the following screenshot. If it does not match, delete the node and repeat the step using the **first Customer Details** topic.
 
 1. Select **Save**.
 
@@ -316,11 +315,11 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 1. Select the **+** icon under the **Topic** node and select **Add a condition**.
 
-1. In the **Condition** node, select the **DetailsCorrect** variable.
+1. In the **Condition** node, select the **Select a variable >** then  choose **DetailsCorrect** variable.
 
 1. Select **is equal to**.
 
-1. Select **Yes**.
+1. Select **Yes** for **Enter or select a value**
 
    ![Screenshot of adding a condition node.](../media/condition-node.png)
 
@@ -336,7 +335,11 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 1. Select **Date and time** for **Identify**.
 
+   ![Screenshot of Date and Time.](../media/DateandTime.png)
+
 1. Select the variable in **Save user response as** and enter **`VisitDateTime`** for **Variable name**
+
+   ![Screenshot of Var Name.](../media/VarName.png)
 
 1. Select the **+** icon under the left **Question** node and select **Send a message**.
 
@@ -346,6 +349,8 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 1. After that message node, add a node to end the topics by selecting **Topic management** \> **End all topics**.
 
+   ![Screenshot of End all Topics.](../media/EndallTopics.png)
+
 1. Select **Save**.
 
 ### Task 5.7 - Update agent instructions
@@ -354,7 +359,7 @@ In this exercise, you will create the **Estimate Repair** topic, add nodes, and 
 
 1. In the **Instructions** section, select **Edit**.
 
-1. Under *# Skills* in the agent instructions, enter `Use the`, then type `/` and select the **Estimate Repair** topic, then enter `when a repair estimate is required.`
+1. Under *# Skills* in the agent instructions, enter `- Use the`, then type `/` and select the **Estimate Repair** topic, then enter `when a repair estimate is required.`
 
    ![Screenshot of referencing the topic in the agent instructions.](../media/add-topic-to-instructions.png)
 
@@ -368,7 +373,7 @@ In this exercise, you will test topic routing and confirm the conversation follo
 
 1. Select the **Test** icon in the upper-right of the page to open the **Test** pane.
 
-1. In the **Test** pane, select the ellipsis (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **On** and **Track between topics** to **Off**.
+1. In the **Test** pane, select the ellipses (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **On** and **Track between topics** to **Off**.
 
    ![Show activity map.](../media/show-activity-map.png)
 
@@ -377,6 +382,9 @@ In this exercise, you will test topic routing and confirm the conversation follo
 1. When the **Conversation Start** message appears, your agent will start a conversation. In response, enter the following text to trigger the topic:
 
    `I need to book a repair estimate`
+
+   > [!TIP]
+   > If you see the error **"Two or more actions and/or topics have the same identifier 'Customer-Details'"**, the **Customer Details** topic from Lab 1 is still enabled. Turn it **off** before continuing. If you see two **Customer Details** topics, use their **Last modified** time to distinguish them: the more recently modified topic is associated with Lab 2, while the older one is associated with Lab 1.
 
 1. The conversation should begin by asking for the customer's name.
 
@@ -390,9 +398,11 @@ In this exercise, you will test topic routing and confirm the conversation follo
 
    Notice that the conversation flow returns to the **Estimate Repair** topic.
 
-1. Enter `Tomorrow 10:00 AM` to the **What date and time do you want to book the repair estimate?** prompt.
+1. Enter `Tomorrow 10:00 AM` in response to the **What date and time would you like to book the repair estimate?** prompt.
 
-   The agent responds with a confirmation message indicating the repair estimate has been scheduled.
+   The agent responds with:
+   
+   `Great! Let me get that scheduled for you.`
 
 ## Summary
 
