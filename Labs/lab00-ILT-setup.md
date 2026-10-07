@@ -33,9 +33,11 @@ Before you start the lab exercises, you must create a development environment fo
 1. Enter your preferred name in the **Name** field.
    ![Environment page's set Your Name.](../media/YourName.png)
 1. Expand **Change default settings**. Under **Add a Dataverse data store?**, select **Yes**.
+
    ![Environment page's select new.](../media/ToggleYes.png)
 
    > [!NOTE]
+   >
    > Pay-as-you-go with Azure is unavailable for Trial environments. This setting is supported only for Production and Sandbox environments.
 
 1. Select **Next**. In the **Add Dataverse** panel, set the following:
