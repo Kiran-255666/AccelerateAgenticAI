@@ -73,8 +73,6 @@ Before you start the lab exercises, you must create a development environment fo
 
 4. In the **upper-right corner** of the page, just to the left of the **Settings** ⚙️ icon, locate the **Environment Selector** showing the current environment.
 
-   ![Environment.](../media/u1.png)
-
 5. Select the **Environment Selector**.
 
    ![Environment Selector.](../media/u11.png)
