@@ -67,7 +67,7 @@ Before you start the lab exercises, you must create a development environment fo
 
    ![Copilot Studio interface.](../media/newuserxp1.png)
 
-3. Select **...** (More options) at the bottom of the page. Under **Explore**, select **Open Classic Experience**, then select **Skip feedback**.
+3. Select **...** (More options) at the bottom of the page. Under **Explore**, select **Open Classic Experience**, then select **Skip feedback** and if any setup prompts appear, select Get started and follow the prompts until they are completed. .
 
    ![Copilot Studio interface.](../media/newuserxp2.png)
 
