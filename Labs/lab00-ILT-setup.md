@@ -122,10 +122,13 @@ Before you start the lab exercises, you must create a development environment fo
 
    ![New solution.](../media/newsolutionone.png)
 
-11. Close the **Solutions** browser tab, then refresh the **Copilot Studio** page.
-![New solution.](../media/labex1.png)
+11. Close the **Solutions** browser tab by selecting the **←** icon in the left pane.
 
-You now have a Power Platform environment and solution to work in.
+![New solution.](../media/labex11.png)
+
+12. You now have a Power Platform environment and solution to work in.
+
+![New solution.](../media/labex1.png)
 
 ## Summary
 
