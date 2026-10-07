@@ -71,11 +71,11 @@ Before you start the lab exercises, you must create a development environment fo
 
    ![Copilot Studio interface.](../media/newuserxp2.png)
 
-4. In the **upper-right corner** of the page, just to the left of the **Settings** ⚙️ icon, locate the **Environment Selector** showing the current environment.
+4. Now you are in the **Open Classic Experience**. In the **upper-right corner** of the page, just to the left of the **Settings** ⚙️ icon, locate the **Environment Selector** showing the current environment.
 
 5. Select the **Environment Selector**.
 
-   ![Environment Selector.](../media/u11.png)
+   ![Environment Selector.](../media/u111.png)
 
 6. The **Select environment** menu will open.
 
