@@ -42,7 +42,7 @@ This exercise will take approximately **30** minutes to complete.
 ## Prerequisites
 
 - Have a Microsoft Entra ID account
-- Have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
+- Have a Copilot Studio license or have signed up for a free trial
 - Have access to a Power Platform environment and a solution where you can create agents and related assets.
 - You can use:
   - the environment and **Lab Exercises** solution created in the **ILT Setup** lab, or
@@ -69,19 +69,30 @@ The new experience is best suited for agents that need to handle open-ended, con
 
 ### Task 1.1 – Open the new experience
 
-1. Navigate to the **Copilot Studio** new experience home page at `https://copilotstudio.preview.microsoft.com/` and sign in if prompted.
+1. Navigate to the **Copilot Studio** new experience home page at `https://copilotstudio.preview.microsoft.com/`. If you are signed out or have not signed in, sign in using the credentials provided for the lab.
 
-1. At the bottom of the left-hand navigation, select the current environment name, then confirm or switch to the environment you want for this exercise.
+1. At the bottom of the left-hand navigation, select the current **environment name**, then select **All environments**. Select the **environment you created earlier for this exercise**.
 
-### Task 1.2 – Review the new interface
+   ![Safe Travels template.](../media/Testuser.png)
 
-Take a moment to review how the new experience is organized before creating your agent.
+### Task 1.2 – Review the New Interface
 
-1. In the left-hand navigation, note the main sections: **Home**, **Agent Ops**, **Chat**, **Agents**, and **Workflows**.
+Take a moment to review how the new Copilot Studio experience is organized before creating your agent.
+   
+   ![New Interface](../media/uiuiui.png)
 
-1. The **Agents** page shows any existing agents. Agents created in the new experience do not have a topic canvas — their behavior is defined entirely by instructions, knowledge, and actions on the agent's **Overview** page.
+| Location | Name | Purpose |
+|----------|------|---------|
+| Left navigation | Home | Provides access to the Copilot Studio home page where you can create agents and workflows. |
+| Left navigation | Operate | Used to monitor and manage agent operations and activity. |
+| Left navigation | Chat | Allows you to interact with and test agents through conversations. |
+| Left navigation | Agents | Displays existing agents and allows you to create and manage new agents. |
+| Left navigation | Workflows | Used to create and manage automated workflows and business processes. |
+| Home page | Agent | Creates an AI agent that can answer questions, follow instructions, use knowledge sources, and perform actions. |
+| Home page | AI Workflow | Creates an AI-powered workflow that automates multi-step tasks using triggers and actions. |
+| Home page | Other ways to build | Provides additional options for building agents and automation solutions. |
 
-1. Notice there is no **Topics** section in the navigation. In the new experience, topics are replaced by actions and instructions.
+> **Note:** In the new Copilot Studio experience, agent behaviour is configured through **Instructions**, **Knowledge**, and **Actions**. The traditional **Topics** authoring experience is no longer available in the left navigation.
 
 ## Exercise 2 - Create an agent
 
