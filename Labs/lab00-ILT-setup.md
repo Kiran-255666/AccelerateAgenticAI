@@ -17,10 +17,7 @@ lab:
 
 Before you start the lab exercises, you must create a development environment for you to work in.
 
-1. Open a web browser and navigate to the **Power Platform admin center** https://admin.powerplatform.microsoft.com/manage/environments. Sign in using the **credentials provided for this lab**.
-   
-   ![Environment page's select new.](../media/ami.png)
-   
+1. Open a web browser and navigate to the **Power Platform admin center** https://admin.powerplatform.microsoft.com/manage/environments. Sign in using the **credentials provided for this lab**.   
 1. If prompted, choose the option to stay signed in. Close any pop-up messages that are displayed.
 
 ### Task 1.2 - Create a new environment
@@ -37,7 +34,6 @@ Before you start the lab exercises, you must create a development environment fo
    ![Environment page's select new.](../media/ToggleYes.png)
 
 > [!NOTE]
->
 > **Pay-as-you-go with Azure is unavailable for Trial environments. This setting is supported only for Production and Sandbox environments**.
 
 1. Select **Next**. In the **Add Dataverse** panel, set the following:
@@ -49,15 +45,15 @@ Before you start the lab exercises, you must create a development environment fo
    - **Enable Dynamics 365 apps?**: leave as it is (locked to No), move to the next field
    - **Deploy sample apps and data?**: No
 
-   > [!NOTE]
-   > Currency defaults based on your region (for example, INR for India). Enable Dynamics 365 apps is disabled for Trial environments — it's only available for Production or Sandbox environments.
+> [!NOTE]
+> **Currency defaults based on your region (for example, INR for India). Enable Dynamics 365 apps is disabled for Trial environments and it's only available for Production or Sandbox environments**.
    
    ![Environment Save Button.](../media/Save.png)
 
 1. Select **Save** and wait until the environment state is **Ready** (use **Refresh** to update the display).
 
-   > [!NOTE]
-   > Environment provisioning can take several minutes depending on tenant configuration.
+> [!NOTE]
+> **Environment provisioning can take several minutes depending on tenant configuration**.
 
    ![Environment created in the Power Platform Admin center.](../media/environment-created.png)
 
