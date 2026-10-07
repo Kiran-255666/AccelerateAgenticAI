@@ -63,37 +63,35 @@ Before you start the lab exercises, you must create a development environment fo
 
 1. In a new browser tab, open **Copilot Studio** https://copilotstudio.microsoft.com/ and sign in if prompted.
 
-2. You will be redirected to the new Copilot Studio UI. This UI has fewer features than the Classic Experience UI. We will use the Classic Experience UI throughout the labs.
+2. You will be redirected to the **new Copilot Studio UI**. This UI has fewer features than the **Classic Experience UI**. We will use the **Classic Experience UI** throughout the labs.
 
-   ![Copilot Studio interface.](../media/newuserxp.png)
+   ![Copilot Studio interface.](../media/newuserxp1.png)
 
 3. Select **...** (More options) at the bottom of the page. Under **Explore**, select **Open Classic Experience**, then select **Skip feedback**.
 
-   ![Copilot Studio interface.](../media/newuserxp.png)
+   ![Copilot Studio interface.](../media/newuserxp2.png)
 
 4. In the **upper-right corner** of the page, just to the left of the **Settings** ⚙️ icon, locate the **Environment Selector** showing the current environment.
 
    ![Environment.](../media/u1.png)
 
-5. Check the **Environment Selector** and make sure the required environment is selected.
+5. Select the **Environment Selector**.
 
-6. Select the **Environment Selector**.
+   ![Environment Selector.](../media/u11.png)
 
-   ![Environment Selector.](../media/u1.png)
+6. The **Select environment** menu will open.
 
-7. The **Switch environment** menu will open.
+   ![Environment Selector.](../media/u22.png)
 
-   ![Environment Selector.](../media/u2.png)
+7. Under **Supported environments**, select your **named environment**.
 
-8. Under **Supported environments**, select your **named environment**.
+   ![Environment Selector.](../media/u33.png)
 
-   ![Environment Selector.](../media/u3.png)
+8. Your **named environment** should now be displayed in the **Environment Selector**.
 
-9. Your **named environment** should now be displayed in the **Environment Selector**.
+   ![Environment Selector.](../media/u44.png)
 
-   ![Environment Selector.](../media/u4.png)
-
-10. You are now in the correct **environment** and the **Classic Experience** UI is ready for the lab.
+9. You are now in the correct **environment** and the **Classic Experience** UI is ready for the lab.
 
 > [!TIP]
 >
@@ -102,29 +100,29 @@ Before you start the lab exercises, you must create a development environment fo
 ### Task 1.4 - Create a solution
 
 1. In the left navigation pane, select the ellipses (**...**), then select **Solutions**.
-1. Verify that **Default Solution** and **Common Data Services Default Solution** are listed.
+2. Verify that **Default Solution** and **Common Data Services Default Solution** are listed.
 
    ![List of solutions in Maker portal.](../media/solutions-list.png)
 
-1. Select **+ New solution**.
-1. Enter `Lab Exercises` in the **Display name** field. The **Name** field should automatically populate as **LabExercises**, with the space removed.
-1. Select **+ New publisher** below the **Publisher** drop-down.
-1. Enter `Fabrikam_unique_Suffix` for Display name, `fabrikam_unique_suffix` for Name, Leave the Description field empty and proceed to the next field, Prefix. Now fill `fab` for Prefix, then select **Save**.
+3. Select **+ New solution**.
+4. Enter **`Lab Exercises`** in the **Display name** field. The **Name** field should automatically populate as **LabExercises**, with the space removed.
+5. Select **+ New publisher** below the **Publisher** drop-down.
+6. Enter **`Fabrikam_unique_Suffix`** for Display name, `fabrikam_unique_suffix` for Name, Leave the Description field empty and proceed to the next field, Prefix. Now fill `fab` for Prefix, then select **Save**.
 
    ![List of solutions in Maker portal.](../media/fabone.png)
      
-1. Confirm **Fabrikam_unique_suffix (fabrikam_unique_suffix)** is selected in the **Publisher** drop-down.
-1. Leave **Version** as the default value.
-1. Select the **Set as your preferred solution** checkbox.
+7. Confirm **Fabrikam_unique_suffix (fabrikam_unique_suffix)** is selected in the **Publisher** drop-down.
+8. Leave **Version** as the default value.
+9. Select the **Set as your preferred solution** checkbox.
 
-   > [!NOTE]
-   > Setting this as your preferred solution ensures new assets created during later labs are added to the Lab Exercises solution by default.
+> [!NOTE]
+> Setting this as your preferred solution ensures new assets created during later labs are added to the Lab Exercises solution by default.
 
-1. Select **Create**.
+10. Select **Create**.
 
    ![New solution.](../media/newsolutionone.png)
 
-1. Close the **Solutions** browser tab, then refresh the **Copilot Studio** page.
+11. Close the **Solutions** browser tab, then refresh the **Copilot Studio** page.
 ![New solution.](../media/labex1.png)
 
 You now have a Power Platform environment and solution to work in.
