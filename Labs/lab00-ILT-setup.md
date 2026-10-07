@@ -23,20 +23,20 @@ Before you start the lab exercises, you must create a development environment fo
 ### Task 1.2 - Create a new environment
 
 1. In the sidebar, select **Manage**.
-1. In the **Environments** page, select **+ New**.
+2. In the **Environments** page, select **+ New**.
    ![Environment page's select new.](../media/ClickNew.png)
-1. In the **New environment** panel, set **Type** to Trial and **Region** to the default region shown (a local region provides quicker data access).
+3. In the **New environment** panel, set **Type** to Trial and **Region** to the default region shown (a local region provides quicker data access).
    ![Environment page's Type and Region.](../media/TypeRegion.png)
-1. Enter your preferred name in the **Name** field.
+4. Enter your preferred name in the **Name** field.
    ![Environment page's set Your Name.](../media/YourName.png)
-1. Expand **Change default settings**. Under **Add a Dataverse data store?**, select **Yes**.
+5. Expand **Change default settings**. Under **Add a Dataverse data store?**, select **Yes**.
 
    ![Environment page's select new.](../media/ToggleYes.png)
 
 > [!NOTE]
 > **Pay-as-you-go with Azure is unavailable for Trial environments. This setting is supported only for Production and Sandbox environments**.
 
-1. Select **Next**. In the **Add Dataverse** panel, set the following:
+6. Select **Next**. In the **Add Dataverse** panel, set the following:
    - **Language**: leave as it is if already English (United States), otherwise select English (United States) and move to the next field
    - **Currency**: leave as default
    - **Security group**: Click **+ Select** and in **Edit security group** find **open access** click **None** and Click **Done**
@@ -46,16 +46,14 @@ Before you start the lab exercises, you must create a development environment fo
    - **Deploy sample apps and data?**: No
 
 > [!NOTE]
-> **Currency defaults based on your region (for example, INR for India). Enable Dynamics 365 apps is disabled for Trial environments and it's only available for Production or Sandbox environments**.
-   
-   ![Environment Save Button.](../media/Save.png)
+> **Currency defaults based on your region (for example, INR for India). Enable Dynamics 365 apps is disabled for Trial environments and it's only available for Production or Sandbox environments**.   
+![Environment Save Button.](../media/Save.png)
 
-1. Select **Save** and wait until the environment state is **Ready** (use **Refresh** to update the display).
+7. Select **Save** and wait until the environment state is **Ready** (use **Refresh** to update the display).
 
 > [!NOTE]
 > **Environment provisioning can take several minutes depending on tenant configuration**.
-
-   ![Environment created in the Power Platform Admin center.](../media/environment-created.png)
+![Environment created in the Power Platform Admin center.](../media/environment-created.png)
 
 ### Task 1.3 - Access Copilot Studio
 
