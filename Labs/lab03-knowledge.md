@@ -219,7 +219,7 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 
 1. For *Enter term*, enter `Incidental expenses`.
 
-1. For *Enter description*, enter `Minor, necessary business costs that arise in addition to a primary expense such as tips or fees.`.
+1. For *Enter description*, enter `Minor, necessary business costs that arise in addition to a primary expense such as tips or fees`. Click **add**.
 
 1. Select **Save**.
 
@@ -231,7 +231,7 @@ Check whether the uploaded file has completed indexing. If indexing is still in 
 
 1. Check on the **Status** of your file upload. If it is still **In progress**, refresh every few minutes until it is **Ready**.
 
-   ![Screenshot of Status.](../media/StatusReady.png)
+   ![Screenshot of Status.](../media/StatusReady1.png)
 
 ### Task 3.6 - Test grounding
 
@@ -249,7 +249,7 @@ Check whether the uploaded file has completed indexing. If indexing is still in 
 
 1. The response should be grounded using the uploaded expense policy document and may also reference other configured knowledge sources.
 
-   ![Screenshot of the conversation.](../media/knowledge-conversation-1.png)
+   ![Screenshot of the conversation.](../media/knowledge-conversation-11.png)
 
 1. At the top of the **Test** pane, select the **Start new test session** icon **+**.
 
@@ -259,7 +259,7 @@ Check whether the uploaded file has completed indexing. If indexing is still in 
 
 1. The agent should search all the knowledge sources and generate a response using the Dataverse table.
 
-   ![Screenshot of the conversation.](../media/knowledge-conversation-2.png)
+   ![Screenshot of the conversation.](../media/knowledge-conversation-22.png)
 
 1. At the top of the **Test** pane, select the **Start new test session** icon **+**.
 
@@ -269,29 +269,65 @@ Check whether the uploaded file has completed indexing. If indexing is still in 
 
 1. The agent should search all the knowledge sources and generate a response using the public website.
 
-   ![Screenshot of the conversation.](../media/knowledge-conversation-3.png)
+   ![Screenshot of the conversation.](../media/knowledge-conversation-33.png)
 
 ## Exercise 4 - Generative AI settings
 
 In this exercise you will configure generative AI for the agent and for the generative answers node.
 
+## Exercise 4 - Generative AI settings
+
+In this exercise, you will configure the generative AI settings and test how the agent uses its knowledge sources.
+
 ### Task 4.1 – Configure agent knowledge settings
 
 1. In the upper-right of the agent page, select the **Settings** button.
 
-1. Note that **Orchestration** is set to **Yes - Responses will be dynamic, using available tools and knowledge as appropriate**.
+2. Verify that **Orchestration** is set to **Yes - Responses will be dynamic, using available tools and knowledge as appropriate**.
 
-1. Scroll down, and you’ll find **Knowledge** section, set **Allow ungrounded responses** to **Off**.
+3. In the **Knowledge** section, set **Allow ungrounded responses** to **Off**.
 
-1. In the **Knowledge** section, set **Use information from the Web** to **Off**.
+4. Set **Use information from the Web** to **Off**.
 
-   ![Screenshot of knowledge settings for agent.](../media/knowledge-agent-settings.png)
+   [Screenshot of knowledge settings for agent.](https://github.com/Kiran-255666/AccelerateAgenticAI/blob/main/media/knowledge-agent-settings.png) ([image](https://github.com/Kiran-255666/AccelerateAgenticAI/raw/main/media/knowledge-agent-settings.png))
 
-1. Select **Save**
+5. Select **Save**.
 
-1. In the upper-right of the Settings page, select **X** to close settings.
+6. Select **X** to close the Settings page.
 
-1. Test the agent using the prompts from the previous exercise. The file and Dataverse knowledge sources will be used but the public website will not be used when generating a response.
+7. Open the **Test** pane and start a new test session.
+
+8. Enter the following prompts to test the configured knowledge sources.
+
+#### Test 1 - File knowledge
+
+Enter:
+
+```text
+What can I claim for expenses?
+```
+
+You will get a response about the **claimable expense categories**, and the response will use the **Expenses_Policy.docx** knowledge source.
+
+#### Test 2 - Dataverse knowledge
+
+Start a new test session and enter:
+
+```text
+What is the total amount of all expense claims for each category?
+```
+
+You will get a response showing the **total expense claims for each category**, and the response will use the **Dataverse expense claims table**.
+
+#### Test 3 - Web knowledge
+
+Start a new test session and enter:
+
+```text
+According to the IRS, what is the standard deduction for incidental expenses?
+```
+
+You will get a response indicating that the requested information **could not be determined from the available sources**, because **Use information from the Web** is turned **Off**.
 
 ### Task 4.2 – Configure generative answers node
 
@@ -369,7 +405,7 @@ In this exercise you will configure generative AI for the agent and for the gene
 
    ![Screenshot of the conversation using the Fallback topic.](../media/knowledge-conversation-5.png)
 
-## Exercise 5 - Publish the agent to Microsoft Teams
+## Exercise 5 - Publish the agent and optionally validate in Microsoft Teams
 
 In this exercise, you will publish the agent to Microsoft Teams, first ensuring that Microsoft Entra ID authentication is enabled.
 
@@ -381,9 +417,7 @@ In this exercise, you will publish the agent to Microsoft Teams, first ensuring 
 
 1. Select **Authentication**.
 
-1. If not already selected, select **Authenticate with Microsoft**.
-
-1. Select **Save** and select **Save** again.
+1. If not already selected, select **Authenticate with Microsoft**. then Select **Save** and select **Save** again.
 
 1. In the upper-right of the **Settings** page, select **X** to close settings.
 
