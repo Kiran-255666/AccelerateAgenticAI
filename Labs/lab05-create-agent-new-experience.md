@@ -126,8 +126,6 @@ In this exercise, you will create an IT support agent for a fictional company ca
 
 8. Review the **Schema name**. The schema name is generated automatically. Keep the generated value.
 
-   ![Configure agent settings.](../media/configure-agent-settings.png)
-
 9. Select **Create** to create the agent.
 
 10. Wait for Copilot Studio to create the agent.
