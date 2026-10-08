@@ -100,83 +100,162 @@ In this exercise, you will create an IT support agent for a fictional company ca
 
 ### Task 2.1 – Create the agent
 
+1. In the left navigation, select **Agents**.
+
+2. Select the **New Agent** dropdown, then select **Agent**.
+
+3. Under **Other ways to build**, select **Agent (standard)**.
+
+   ![Select Agent (standard).](../media/select-standard-agent.png)
+
+4. On the **Name your agent** page, enter the following name:
+
+   ```text
+   Contoso IT Helpdesk
+   ```
+
+   ![Enter the agent name.](../media/enter-agent-name.png)
+
+5. Under **Agent settings (Optional)**, review the available settings.
+
+6. For **Language**, keep the default value **English (United States)**.
+
+7. For **Solution**, select **labsolution**.
+
+8. Review the **Schema name**. The schema name is generated automatically. Keep the generated value.
+
+   ![Configure agent settings.](../media/configure-agent-settings.png)
+
+9. Select **Create** to create the agent.
+
+10. Wait for Copilot Studio to create the agent.
 
 ### Task 2.2 – Review and refine the auto-generated instructions
 
-1. On the agent's **Build** tab, locate the **Instructions** section.
+1. In the agent workspace, locate the **Instructions** section.
 
-1. Review the instructions that were generated from your description. They should describe the agent's purpose, tone, and general behavior.
+2. Review the instructions generated for the agent. They should describe the agent's purpose, tone, and general behavior.
 
-1. In the **Instructions** section, update the instructions by adding the following guidelines, then select **Save**:
+3. In the **Instructions** section, add the following guidelines, then save the changes:
 
    ```prompt
    ## Guidelines
+
    - Always respond in a professional and friendly tone.
+
    - For password reset requests, direct the employee to the self-service portal at https://aka.ms/sspr before offering to raise a ticket.
+
    - For issues you cannot resolve, collect the employee's name, email address, and a brief description of the issue before submitting a ticket.
+
    - Do not speculate about hardware failures. Always recommend contacting the IT desk directly for physical hardware issues.
+
    - When an employee's issue cannot be resolved, use the Send an email action to notify the IT helpdesk at helpdesk@contoso.com with the employee's name, email, and issue description.
    ```
-   
-   > [!NOTE]
-   > Instructions in the new experience are the primary way to control agent behavior. Well-written instructions reduce the need for additional configuration and make the agent more predictable.
+
+   ![Configure the agent instructions.](../media/configure-agent-instructions.png)
+
+> [!NOTE]
+> Instructions are the primary way to define agent behavior. Clear and specific instructions help the agent respond consistently to different user requests.
 
 ## Exercise 3 - Test and refine
 
-In this exercise, you will test the agent and observe how it reasons before responding.
+In this exercise, you will test the agent with different IT support scenarios and refine its instructions based on the results.
 
-### Task 3.1 – Open the Preview tab
+### Task 3.1 – Open the test experience
 
-1. Select the **Preview** tab at the top of the page to test the agent.
+1. Open the **Test** or **Preview** experience for the agent.
 
-1. When you test the agent, a reasoning summary appears automatically above each response, describing how the agent decided what to do. Select **Show more** on that summary to expand the full reasoning trace.
+2. If an existing conversation is displayed, start a new chat.
 
-   > [!NOTE]
-   > The reasoning trace is a key feature of the new experience. It shows which knowledge sources or actions the agent considered and why — for example, a **Loaded Skill** entry indicates which action or skill the agent invoked.
+   ![Open the agent test experience.](../media/open-agent-test.png)
 
-### Task 3.2 – Test the instructions
+> [!NOTE]
+> The test experience allows you to interact with the agent and verify whether it follows the instructions you configured.
 
-1. At the top of the **Preview** tab, select **New chat**.
+### Task 3.2 – Test the password reset scenario
 
-1. Enter the following prompt:
+1. Start a new chat.
+
+2. Enter the following prompt:
 
    ```prompt
    I forgot my password and cannot log in.
    ```
 
-   Based on the instructions you wrote, the agent should direct you to the self-service portal before offering to raise a ticket.
+3. Review the agent's response.
 
-### Task 3.3 – Test the agent's reasoning behavior
+4. Verify that the agent directs you to the self-service password reset portal:
 
-1. At the top of the **Preview** tab, select **New chat**.
+   ```text
+   https://aka.ms/sspr
+   ```
 
-1. Enter the following prompt:
+5. Confirm that the self-service portal is mentioned before the agent offers to raise a support ticket.
+
+   ![Test the password reset scenario.](../media/test-password-reset.png)
+
+> [!NOTE]
+> If the agent does not mention the self-service portal first, refine the password reset instruction before continuing.
+
+### Task 3.3 – Test the hardware issue scenario
+
+1. Start a new chat.
+
+2. Enter the following prompt:
 
    ```prompt
    My laptop will not turn on at all.
    ```
 
-   Based on the instructions you wrote, the agent should decline to troubleshoot the hardware failure remotely, recommend contacting the IT desk directly. The agent might also offer to submit a support ticket on your behalf.
+3. Review the agent's response.
 
-1. If prompted, provide your name, email, and a brief description of the issue.
+4. Verify that the agent does not speculate about the cause of the hardware failure.
+
+5. Verify that the agent recommends contacting the IT desk directly for the physical hardware issue.
+
+6. If the agent offers to submit a support request, provide your name, email address, and a brief description of the issue.
+
+   For example:
+
+   ```text
+   Name: Test User
+   Email: test.user@contoso.com
+   Issue: My laptop will not turn on at all.
+   ```
+
+7. Review the agent's response and verify that it handles the support request using the information provided.
+
+   ![Test the hardware issue scenario.](../media/test-hardware-issue.png)
 
 ### Task 3.4 – Refine instructions based on test results
 
-1. Review how the agent responded across the three test sessions.
+1. Review the agent's responses from the test scenarios.
 
-1. If any response was not aligned with the intended behavior, select the **Build** tab, and in the **Instructions** section, adjust the relevant guideline.
+2. If a response does not align with the intended behavior, return to the **Instructions** section and update the relevant guideline.
 
-   For example, if the agent did not mention the self-service portal for password resets, make the instruction more explicit:
+3. For example, if the agent did not mention the self-service portal first for a password reset request, make the instruction more explicit:
 
    ```prompt
-   - For ALL password-related requests, always mention https://aka.ms/sspr as the first step before any other assistance.
+   - For all password-related requests, always mention https://aka.ms/sspr as the first step before providing any other assistance.
    ```
 
-1. Select **Publish**, then select **Publish agent**. Once the agent is published, select **Done** and re-test the affected scenario.
+4. Save the updated instructions.
+
+5. Return to the test experience and start a new chat.
+
+6. Re-test the scenario that did not produce the expected result.
+
+7. Continue refining the instructions and testing the agent until its responses align with the intended behavior.
+
+   ![Refine the agent instructions.](../media/refine-agent-instructions.png)
 
 > [!NOTE]
-> Iterating on instructions is the primary tuning mechanism in the new experience. Small changes in wording can significantly change agent behavior.
+> Iterating on instructions is an important way to improve agent behavior. Small changes in wording can affect how the agent responds to different requests.
 
 ## Summary
 
-In this lab, you used the new Copilot Studio experience to create an instruction-driven IT support agent. You configured behavior entirely through natural language instructions and added a prebuilt connector action directly in Copilot Studio — without building a Power Automate workflow or leaving the page. Compared to Lab 03, where adding a tool required authoring a workflow, configuring inputs and outputs, and publishing it separately, the new experience significantly reduces the authoring effort for straightforward actions. You also used the reasoning trace in the Preview pane to observe how the agent decided what to do before generating a response. Having worked with both the classic and new experiences, you can now choose the right approach for each scenario: instruction-driven for open-ended conversations, and classic topics and workflows when you need a guaranteed, auditable sequence of steps.
+In this lab, you created a standard agent in the new Copilot Studio experience and configured its behavior using natural language instructions. You created an IT support agent for Contoso, added guidelines for handling password resets and hardware issues, and tested the agent with different user scenarios.
+
+You also refined the instructions based on the agent's responses. This iterative approach helps improve agent behavior without requiring you to define every possible conversation path manually.
+
+The new Copilot Studio experience is useful for agents that handle open-ended requests using instructions, knowledge, and actions. When a scenario requires a fixed and predictable sequence of steps, the classic topic-based approach can still be more appropriate.
