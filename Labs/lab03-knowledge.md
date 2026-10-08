@@ -413,17 +413,17 @@ In this exercise, you will publish the agent to Microsoft Teams, first ensuring 
 
 1. In the upper-right of the agent page, select the **Settings** button.
 
-1. In the left-hand side of the **Settings** page, select **Security**.
+2. In the left-hand side of the **Settings** page, select **Security**.
 
-1. Select **Authentication**.
+3. Select **Authentication**.
 
-1. If not already selected, select **No authentication**. then Select **Save** and select **Save** again.
+4. If not already selected, select **No authentication**. then Select **Save** and select **Save** again.
 
 > [!TIP] 
 >
 > For this lab exercise, we are using No authentication to keep the focus on creating, configuring, and publishing the agent. In real-world deployments, Authenticate with Microsoft is the recommended option to provide secure access through Microsoft Entra ID.
 
-1. In the upper-right of the **Settings** page, select **X** to close settings.
+5. In the upper-right of the **Settings** page, select **X** to close settings.
 
 ### Task 5.2 - Publish the agent
 
