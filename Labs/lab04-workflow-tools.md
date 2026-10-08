@@ -69,7 +69,7 @@ In this exercise, you will create a new agent using natural language to analyze,
 
 1. Select **Agents** in the left-hand navigation.
 
-1. In the bottom-left of the *Start building by describing what your agent needs to do* text box, select the **Agent Settings** icon, which is displayed as a **Cog** image.
+1. In the bottom-left of the *Start building by describing what your agent needs to do* text box, select the **Agent Settings** icon, which is displayed as a **⚙️** icon.
 
    ![Screenshot of the agent settings dialog.](../media/agent-settings-dialog.png)
 
@@ -87,7 +87,7 @@ In this exercise, you will create a new agent using natural language to analyze,
    You are an agent that analyzes, categorizes, and prioritizes tasks.
    ```
 
-1. Select the **Send** icon.
+1. Select the **Send** **→** icon .
 
    Once your agent has been provisioned, you may proceed with configuring your agent.
 
@@ -103,9 +103,9 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
    ![Screenshot of Tools registry page.](../media/copilot-studio-tools-registry.png)
 
-1. Select **+ Add a tool** or **+ New tool**.
+1. Select **+ New tool**.
 
-1. In the **Add Tool** dialog, select the **Agent flow** tile.
+1. In the **New Tool** dialog, select the **Agent flow** tile.
 
 1. Verify that the **When an agent calls the flow** trigger and the **Respond to the agent** action have been added to the workflow.
 
@@ -113,9 +113,11 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. Select the trigger step **When an agent calls the flow** and select **+ Add an input**.
 
+   ![Screenshot of a new workflow.](../media/workflow-new1.png)
+
 1. Select **Text**.
 
-1. Enter `Task Summary` for *Input* and `Analyzed tasks` for *Please enter your input*.
+1. Enter **Task Summary** by replacing the default text **Text**, and enter **Analyzed tasks** by replacing **Please enter your input**.
 
    ![Screenshot of trigger properties of the flow.](../media/workflow-trigger-step.png)
 
@@ -127,9 +129,9 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
    ![Screenshot of details properties of the flow.](../media/workflow-details.png)
 
-1. In the **Details** pane, update the **Flow name** to `Send Summary to Teams`.
+1. Replace the default **Flow name** value `Untitled` with `Send Summary to Teams`.
 
-1. For **Description**, enter `Post a message to Teams with the summary of the task analysis`.
+1. Replace the default **Description** text with `Post a message to Teams with the summary of the task analysis`.
 
 1. Select **Save**.
 
@@ -139,16 +141,14 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. Select the **+** icon between the two steps in the workflow to insert a new action.
 
-1. Enter `Teams` in the **Search** field and select **See more** for the **Microsoft Teams** connector.
-
-   ![Screenshot of searching for connector in the workflow.](../media/workflow-teams-connector.png)
+1. Enter `Post message in a chat or channel` in the **Search** field.
 
 1. Select the **Post message in a chat or channel** action.
 
 1. Select **Sign in**.
 
-   > [!NOTE]
-   > If you receive the error "Failed to create OAuth connection: ClientWarning: The browser has blocked the connection authentication popup window", select the **pop-up blocked** icon in the browser address bar and then select **Always allow pop-ups and redirects from `https://copilotstudio.microsoft.com`**.
+> [!NOTE]
+> If you receive the error "Failed to create OAuth connection: ClientWarning: The browser has blocked the connection authentication popup window", select the **pop-up blocked** icon in the browser address bar and then select **Always allow pop-ups and redirects from `https://copilotstudio.microsoft.com`**.
 
 1. Select your account.
 
@@ -158,11 +158,11 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. For **Post in**, select **Channel**.
 
-1. For **Team**, select a team from the list, for example, **Leadership**.
+1. For **Team**, select **Enter custom value** and enter **Leadership**.
 
-1. For **Channel**, select a channel from the list, for example, **General**.
+1. For **Channel**, select **Enter custom value** and enter **General**.
 
-1. For *Message*, use **Dynamic Content** to select **Task Summary**.
+1. For **Message**, use **Dynamic Content** to select **Task Summary**. You can do this by typing `/` in the box and selecting **Insert dynamic content**.
 
    ![Screenshot of Teams action in the workflow.](../media/workflow-teams-action.png)
 
@@ -174,7 +174,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. For *Enter a name*, enter `Message`.
 
-1. For *Enter a value to respond with*, use **Dynamic Content** and select the **Message link** from the Teams action.
+1. For **Enter a value to respond with**, type `/`, select **Insert dynamic content**, and then select **Message link** from the Teams action.
 
    ![Screenshot of the response action in the workflow.](../media/workflow-response-action.png)
 
@@ -188,11 +188,11 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. Select **Agents** from the left navigation pane.
 
-1. Open the **Task Analysis** agent.
+1. Open the **Task Analysis and Prioritization Agent** agent.
 
 1. Select the **Tools** tab.
 
-1. Select **+ Add a tool**. In some experiences, this option appears as **+ New tool**.
+1. Select **+ Add a tool**.
 
 1. In the **Add tool** dialog, select the **Flow** filter.
 
@@ -202,7 +202,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. Select **Add and configure**.
 
-1. In the **Details** section, for **Description**, enter `Sends a summary of the completed task analysis to a Microsoft Teams channel`.
+1. In the **Details** section, for **Description**, replace `Send Summary to Teams` by entering `Sends a summary of the completed task analysis to a Microsoft Teams channel`.
 
 1. Expand **Additional details**, then select and enter the following:
 
