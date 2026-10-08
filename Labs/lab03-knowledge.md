@@ -421,7 +421,7 @@ In this exercise, you will publish the agent to Microsoft Teams, first ensuring 
 
 > [!TIP] 
 >
-> For this lab exercise, we are using No authentication to keep the focus on creating, configuring, and publishing the agent. In real-world deployments, Authenticate with Microsoft is the recommended option to provide secure access through Microsoft Entra ID.
+> Here we use No authentication to simplify the Microsoft Teams deployment experience and keep the focus on creating, configuring, and publishing the agent.
 
 5. In the upper-right of the **Settings** page, select **X** to close settings.
 
@@ -437,27 +437,31 @@ In this exercise, you will publish the agent to Microsoft Teams, first ensuring 
 
    ![Screenshot of Channels tab in Copilot Studio.](../media/channels-tab-teams.png)
 
-1. Select the **Microsoft 365 and Microsoft Teams** tile.
+2. Select the **Microsoft 365 and Microsoft Teams** tile.
 
-1. Deselect the **Make agent available in Microsoft 365 Copilot** checkbox.
+3. Deselect the **Make agent available in Microsoft 365 Copilot** checkbox.
 
-1. Select **Add channel**.
+4. Select **Add channel**.
 
    ![Screenshot Teams channel Copilot Studio.](../media/channel-teams.png)
 
-1. Select **See agent in Teams**.
+5. Select **See agent in Teams**.
 
-1. Select **Cancel** in the dialog box for **This site is trying to open Microsoft Teams (work or school)**.
+6. Select **Cancel** in the dialog box for **This site is trying to open Microsoft Teams (work or school)**.
 
-1. In the pop-up, select **Cancel** and select **Use the web app instead**.
+7. In the pop-up, select **Cancel** and select **Use the web app instead**.
 
-1. Select **Add** to add the agent to Teams.
+8. Select **Add** to add the agent to Teams.
 
    ![Screenshot of dialog to add the app to Teams.](../media/channel-teams-app.png)
 
-1. Select **Open** and wait for the agent to load in Teams.
+9. Select **Open** and wait for the agent to load in Teams.
 
-1. Test the published agent in Microsoft Teams.
+> [!TIP] 
+> 
+> Before testing the agent in Microsoft Teams, return to Copilot Studio and update the authentication method to Authenticate with Microsoft. Select Save, Save again, then Publish the agent. After publishing is complete, return to Microsoft Teams and test the agent.
+
+10. Test the published agent in Microsoft Teams. For example, ask: **`What can I claim for expenses?`**
 
     ![Screenshot of the agent in Teams.](../media/channel-teams-test.png)
 
