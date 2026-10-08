@@ -417,7 +417,7 @@ In this exercise, you will publish the agent to Microsoft Teams, first ensuring 
 
 1. Select **Authentication**.
 
-1. If not already selected, select **Authenticate with Microsoft**. then Select **Save** and select **Save** again.
+1. If not already selected, select **No authentication**. then Select **Save** and select **Save** again.
 
 1. In the upper-right of the **Settings** page, select **X** to close settings.
 
