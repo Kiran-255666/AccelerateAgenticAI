@@ -81,7 +81,7 @@ In this exercise, you will create a new agent using natural language to answer q
 
 1. Leave **English (United States)** set as the primary language for the agent.
 
-1. In the **Solution** drop-down, select **Lab Exercises** or another solution you want to use for this exercise.
+1. In the **Solution** drop-down, select **Lab Exercises** that you created earlier for this exercise.
 
 1. Enter `insuranceagent` for the *Schema name*.
 
@@ -149,7 +149,7 @@ In this exercise, you will use Copilot to create a topic from a description. Thi
 
 1. In the **Edit with Copilot** panel, in the **What do you want to do?** field, enter the following text:
 
-   `Change "What is your email address?" to say thank you to the Name variable from the previous node and then proceed to ask the email address question.`
+   `Replace "What is your email address?" to say thank you to the Name variable from the previous node and then proceed to ask the email address question.`
 
 1. Select **Update**.
 
