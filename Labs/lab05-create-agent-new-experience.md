@@ -63,7 +63,7 @@ The new Copilot Studio experience replaces the topic authoring canvas with a sim
 | Topics, conditions, and branches control conversation routing | Instructions, knowledge, and actions determine what the agent does |
 | Actions require building a Power Automate workflow, configuring inputs/outputs, and adding it as a tool | Prebuilt connector actions are added directly in Copilot Studio — no workflow authoring required |
 
-The new experience is best suited for agents that need to handle open-ended, context-dependent conversations. The classic experience (covered in later labs) remains the right choice when you need a guaranteed, auditable sequence of steps — for example, collecting structured data in a specific order.
+The new experience is best suited for agents that need to handle open-ended, context-dependent conversations. The classic experience, covered in later labs, remains the right choice when you need a guaranteed, auditable sequence of steps, for example, collecting structured data in a specific order.
 
 ## Exercise 1 - Switch to the new Copilot Studio experience
 
