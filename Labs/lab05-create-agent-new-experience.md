@@ -100,27 +100,29 @@ In this exercise, you will create an IT support agent for a fictional company ca
 
 ### Task 2.1 – Create the agent
 
-1. In the left navigation, select **Agents**.
+1. In the left navigation, select **Home**, then select **Agents**.
 
-2. Select the **New Agent** dropdown, then select **Agent**.
+2. Now you are in **Agents** page. Select the **New Agent** dropdown.
+
+   ![Select Agent (standard).](../media/select-standard-agent22.png)
 
 3. Under **Other ways to build**, select **Agent (standard)**.
 
-   ![Select Agent (standard).](../media/select-standard-agent.png)
+   ![Select Agent (standard).](../media/select-standard-agent11.png)
 
-4. On the **Name your agent** page, enter the following name:
+4. On the **Name your agent** page, in the **Name is required to create a new agent** field, enter the following name:
 
    ```text
    Contoso IT Helpdesk
    ```
 
-   ![Enter the agent name.](../media/enter-agent-name.png)
+   ![Enter the agent name.](../media/enter-agent-name1.png)
 
 5. Under **Agent settings (Optional)**, review the available settings.
 
 6. For **Language**, keep the default value **English (United States)**.
 
-7. For **Solution**, select **labsolution**.
+7. For **Solution**, use dropdown and select **labsolution**.
 
 8. Review the **Schema name**. The schema name is generated automatically. Keep the generated value.
 
@@ -129,6 +131,8 @@ In this exercise, you will create an IT support agent for a fictional company ca
 9. Select **Create** to create the agent.
 
 10. Wait for Copilot Studio to create the agent.
+
+   ![Configure agent settings.](../media/configure-agent-settings22.png)
 
 ### Task 2.2 – Review and refine the auto-generated instructions
 
