@@ -100,34 +100,6 @@ In this exercise, you will create an IT support agent for a fictional company ca
 
 ### Task 2.1 – Create the agent
 
-1. Select **Home** in the left-hand navigation.
-
-1. On the **Home** page, enter the following description in the build prompt box:
-
-   ```prompt
-   You are an IT support agent for Contoso. You help employees troubleshoot common IT issues such as password resets, software installation problems, and network connectivity. When you cannot resolve an issue, you help the employee submit a support ticket.
-   ```
-
-   ![New Interface](../media/newuiprompt.png)
-
-1. Select the **(→)** button inside the prompt box. If prompted with clarifying questions, answer them to help the agent generate more accurate instructions. For example:
-
-   - If asked how employees submit IT support tickets, choose the option to send a support request email to the IT helpdesk (rather than ServiceNow, Jira, Dynamics 365, or Zendesk).
-   - If asked whether the agent should reference a knowledge base, SharePoint site, or website, choose the option indicating no external knowledge source is needed.
-
-   Select **Continue** to advance through the questions, or **Skip** any question that does not apply. Select **Submit** when finished.
-
-   > [!NOTE]
-   > Depending on your description and environment, the clarifying questions may vary or may not appear at all. Answer them in line with the lab scenario rather than expecting these exact questions or answer options.
-
-1. If prompted for the email address the agent should use when sending support requests, enter your admin email address, then select **Submit**.
-
-1. Review and accept the auto-generated instructions and create the agent.
-
-1. On the right-hand side of the page, select your agent draft to open its **Build** tab.
-
-> [!NOTE]
-> The new Copilot Studio experience may automatically generate one or more skills for your agent. On the **Build** tab, review the **Skills** section and remove any automatically generated skills before continuing with the exercise.
 
 ### Task 2.2 – Review and refine the auto-generated instructions
 

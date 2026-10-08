@@ -75,7 +75,7 @@ In this exercise, you will create a new agent using natural language to analyze,
 
 1. Leave **English (United States)** set as the primary language for the agent.
 
-1. In the **Solution** drop-down, select **Lab Exercises** or another solution you want to use for this exercise.
+1. In the **Solution** drop-down, select **Lab Exercises**.
 
 1. Enter `analyzetaskagent` for the *Schema name*.
 
@@ -86,7 +86,7 @@ In this exercise, you will create a new agent using natural language to analyze,
    ```prompt
    You are an agent that analyzes, categorizes, and prioritizes tasks.
    ```
-
+   
 1. Select the **Send** **→** icon .
 
    Once your agent has been provisioned, you may proceed with configuring your agent.

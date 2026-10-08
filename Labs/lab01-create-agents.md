@@ -89,7 +89,7 @@ Open the **Copilot Studio** home page: `https://copilotstudio.microsoft.com/`
 
 1. In the upper-right of the page, select the ellipses (**...**) and select **Edit advanced settings**.
 
-1. Validate that the selected *Solution* is **Lab Exercises** and the *Schema name* prefix is **fab** and select **Cancel**.
+1. If Solution is already set to **Lab Exercises** and the Schema name already uses the **fab** prefix, select **Cancel**. Otherwise, set **Solution** to **Lab Exercises**, update the **Schema name** to use the **fab prefix**, and select **Save**s.
 
 1. In the upper-right of the page, select **Create**.
 
