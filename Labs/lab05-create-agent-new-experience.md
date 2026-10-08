@@ -152,7 +152,7 @@ Do not speculate about hardware failures. For physical hardware issues, tell the
 When an employee's issue cannot be resolved, use the Send an email action to notify the IT helpdesk at helpdesk@contoso.com with the employee's name, email, and issue description.
 ```
 
-![Configure the agent instructions.](../media/configure-agent-instructions1.png)
+![Configure the agent instructions.](../media/configure-agent-instructions11.png)
 
 4. Select **Save** and wait for the changes to be processed.
 
@@ -207,8 +207,6 @@ In this exercise, you will test the agent with different IT support scenarios an
 4. Verify that the agent does not speculate about the cause of the hardware issue.
 
 5. Verify that the agent recommends contacting the IT desk directly for the physical hardware issue.
-
-![Test the hardware issue scenario.](../media/test-hardware-issue.png)
 
 > [!NOTE]
 > The agent should identify this as a physical hardware issue and recommend contacting the IT desk directly without attempting to diagnose the problem.
