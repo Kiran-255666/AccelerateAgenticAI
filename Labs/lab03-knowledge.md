@@ -155,8 +155,6 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 > [!NOTE]
 > After uploading the file, Copilot Studio begins indexing. This may take 10 minutes or longer, so you will check back after the next exercise.
 
-1. Select **Add to agent**.
-
 ### Task 3.2 – Add a public website as a knowledge source
 
 1. In the Copilot Studio agent, select the **Knowledge** tab.
