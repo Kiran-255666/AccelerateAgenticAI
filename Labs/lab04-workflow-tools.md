@@ -239,29 +239,36 @@ In this exercise, you create a workflow that sends a message to Mail. You will a
 
 3. Select all of the existing text in the **Instructions** box and delete it.
 
-4. Enter the following instructions. 
+4. Enter the following instructions.
 
-  ```prompt
+   ```prompt
    # Purpose
+
    The purpose of this agent is to analyze, categorize, and prioritize tasks, and to send a summary of the analysis by mail.
 
    # General guidelines
+
    - Maintain a professional and supportive tone.
    - Always use the topics and tools listed below. Don't answer from your own knowledge.
 
    # Skills
+
    - Use the <Send Summary to Mail> tool to send a summary of the task analysis by mail.
 
    # Step-by-step instructions
+
    1. Analyze tasks
       - Categorize and prioritize the tasks that the user provides.
+      - Determine a recommended execution order.
+      - Create a clear and structured task analysis summary.
+
    2. Send the results
       - Use the <Send Summary to Mail> tool when the task analysis is complete.
    ```
 
-5. Where the text shows a placeholder such as `<Send Summary to Mail>`, edit type the placeholder. By typing `/`, and then select the **Send Summary to Mail** tool from the list so that the tool is inserted as a reference:
+5. In the **Skills** and **Send the results** sections, locate the placeholder `<Send Summary to Mail>` and delete it. Type `/` and select the **Send Summary to Mail** tool from the list to insert it as a tool reference.
 
-   ![Screenshot of referencing the workflow tool in the agent instructions.](../media/workflow-add-tool-to-instructions1.gif)
+   ![Screenshot of referencing the workflow tool in the agent instructions.](../media/workflow-add-tool-to-instructions111.gif)
 
 6. Select **Save**.
 
@@ -287,7 +294,11 @@ In this exercise, you create a workflow that sends a message to Mail. You will a
 
 1. Open the inbox of the email address you entered earlier in the workflow and verify the task analysis summary was received in the mail.
 
-   ![Screenshot of the message in Mail.](../media/workflow-test-agent-teams.png)
+   ![Screenshot of the message in Mail.](../media/workflow-test-agent-mail.png)
+
+> Note: 
+>
+> The formatting of the email may vary. **Focus on verifying that the workflow successfully sent the task analysis summary to the specified email address** .
 
 ## Exercise 3 - Create a workflow tool that analyzes an Excel file in a topic
 
