@@ -77,7 +77,7 @@ In this exercise, you will create a new agent using natural language to analyze,
 
 1. In the **Solution** drop-down, select **Lab Exercises**.
 
-1. Enter `analyzetaskagent` for the *Schema name*.
+1. Enter `taskagent` for the *Schema name*.
 
 1. Select **Update**.
 
@@ -90,6 +90,12 @@ In this exercise, you will create a new agent using natural language to analyze,
 1. Select the **Send** **→** icon .
 
    Once your agent has been provisioned, you may proceed with configuring your agent.
+
+1. In the agent overview page, under the Details section, select Edit.
+
+1. Change the agent name to **`Task Agent`**.
+
+1. Select Save.
 
 ## Exercise 2 - Create a workflow tool
 
