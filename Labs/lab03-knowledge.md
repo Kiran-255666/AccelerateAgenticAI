@@ -226,8 +226,16 @@ In this exercise, you will add knowledge sources to the agent to ground the agen
 Check whether the uploaded file has completed indexing. If indexing is still in progress, wait a few minutes and refresh the page before continuing.
 
 1. Select the **Knowledge** tab.
+2. Wait **1-2 minutes** for the Dataverse knowledge source to be processed, then refresh the page if needed.
+3. Once processing is complete, you should see a table similar to the following:
 
-1. Check the **Status** of the Dataverse knowledge source after adding it to the agent. During processing, the Status may show **Preparing**, and the Type may display an **Unknown** icon or label. This is expected while the knowledge source is being indexed, man. Wait a few minutes and refresh the page if needed. Once processing is complete, the Type will change to **Dataverse** and the Status will change to **Ready**. Continue only after the knowledge source shows **Ready**.
+| Name | Type | Available to | Usage | Status |
+|------|------|------|------|------|
+| Travel, Gift, and Car Expenses \| Internal Website | Public website | Expense Claims Assistant | General | Ready |
+| Expenses_Policy.docx | Files | Expense Claims Assistant | General | Ready |
+| Expense Claims data | Dataverse | Expense Claims Assistant | General | Ready |
+
+> **Note:** You may temporarily see **Unknown**, **Preparing**, or **In progress** in the UI while the Dataverse knowledge source is being processed. This is expected. Wait a few minutes and refresh the page if needed. Continue once the knowledge source shows **Ready**.
 
    ![Screenshot of Status.](../media/StatusReady1.png)
 
