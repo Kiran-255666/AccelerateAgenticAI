@@ -233,11 +233,11 @@ In this exercise, you create a workflow that sends a message to Mail. You will a
 
 1. Select the **Overview** tab.
 
-1. In the **Instructions** section, select **Edit**.
+2. In the **Instructions** section, select **Edit**.
 
-1. Select all of the existing text in the **Instructions** box and delete it.
+3. Select all of the existing text in the **Instructions** box and delete it.
 
-1. Enter the following instructions. 
+4. Enter the following instructions. 
 
   ```prompt
    # Purpose
@@ -257,11 +257,11 @@ In this exercise, you create a workflow that sends a message to Mail. You will a
       - Use the <Send Summary to Mail> tool when the task analysis is complete.
    ```
 
-1. Where the text shows a placeholder such as `<Send Summary to Mail>`, edit type the placeholder. By typing `/`, and then select the **Send Summary to Mail** tool from the list so that the tool is inserted as a reference:
+5. Where the text shows a placeholder such as `<Send Summary to Mail>`, edit type the placeholder. By typing `/`, and then select the **Send Summary to Mail** tool from the list so that the tool is inserted as a reference:
 
    ![Screenshot of referencing the workflow tool in the agent instructions.](../media/workflow-add-tool-to-instructions1.gif)
 
-1. Select **Save**.
+6. Select **Save**.
 
 ### Task 2.6 - Test the workflow tool in the agent
 
@@ -269,7 +269,7 @@ In this exercise, you create a workflow that sends a message to Mail. You will a
 
 1. In the **Test** pane, select the ellipsis (**...**) next to the variables **{x}** icon, and toggle **Show activity map when testing** to **On** and **Track between topics** to **Off**.
 
-   ![Show activity map.](../media/show-activity-map.png)
+   ![Show activity map.](../media/show-activity-map1.png)
 
 1. At the top of the **Test** pane, select the **Start new test session** icon **+**.
 
