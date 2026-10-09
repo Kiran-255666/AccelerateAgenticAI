@@ -308,7 +308,7 @@ In this exercise, you will use Copilot to create a topic from a description, cre
 
 > [!NOTE]
 >
-> If you encounter any issues creating the spreadsheet, you can download a copy from the following link: [Download the file](https://github.com/Kiran-255666/AccelerateAgenticAI/blob/main/labfiles/Operations%20tasks.xlsx?raw=true).
+> If you encounter any issues creating the spreadsheet, you can download a copy from the following link: [Download the file](https://github.com/Kiran-255666/AccelerateAgenticAI/blob/main/labfiles/Operations%20tasks.xlsx).
 
 1. In Copilot Studio, select the **App launcher** icon in the upper-left corner, then select **OneDrive**.
 
