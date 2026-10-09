@@ -287,7 +287,7 @@ In this exercise, you will configure the generative AI settings and test how the
 
 4. Set **Use information from the Web** to **Off**.
 
-   [Screenshot of knowledge settings for agent.](https://github.com/Kiran-255666/AccelerateAgenticAI/blob/main/media/knowledge-agent-settings.png) ([image](https://github.com/Kiran-255666/AccelerateAgenticAI/raw/main/media/knowledge-agent-settings.png))
+   [Screenshot of knowledge settings for agent.](../media/knowledge-agent-settings.png)
 
 5. Select **Save**.
 
@@ -347,8 +347,8 @@ You will get a response indicating that the requested information **could not be
 
 1. Select the **Public website** knowledge source.
 
-1. Select and enable **Web search**.
-  When enabled, Web search allows generative answers to supplement configured knowledge sources with public web information.
+1. Select and enable **Web search**. When enabled, Web search allows generative answers to supplement configured knowledge sources with public web information.
+
    ![Screenshot of generative answers properties.](../media/generative-answers-properties.png)
 
 1. Select **Save**.
