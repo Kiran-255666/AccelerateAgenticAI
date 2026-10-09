@@ -227,7 +227,7 @@ Check whether the uploaded file has completed indexing. If indexing is still in 
 
 1. Select the **Knowledge** tab.
 
-1. Check on the **Status** of your file upload. If it is still **In progress**, refresh every few minutes until it is **Ready**.
+1. Check the **Status** of the Dataverse knowledge source after adding it to the agent. During processing, the Status may show **Preparing**, and the Type may display an **Unknown** icon or label. This is expected while the knowledge source is being indexed, man. Wait a few minutes and refresh the page if needed. Once processing is complete, the Type will change to **Dataverse** and the Status will change to **Ready**. Continue only after the knowledge source shows **Ready**.
 
    ![Screenshot of Status.](../media/StatusReady1.png)
 
@@ -287,7 +287,7 @@ In this exercise, you will configure the generative AI settings and test how the
 
 4. Set **Use information from the Web** to **Off**.
 
-   [Screenshot of knowledge settings for agent.](../media/knowledge-agent-settings.png)
+   ![Screenshot of knowledge settings for agent.](../media/knowledge-agent-settings.png)
 
 5. Select **Save**.
 
