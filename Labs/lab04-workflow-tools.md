@@ -167,11 +167,13 @@ In this exercise, you create a workflow that sends a message to Mail. You will a
 
 1. In the **Body** field, enter `/`, click **Insert dynamic content**, and select **Task Summary** from the dynamic content list.
 
+   ![Screenshot of Mail action in the workflow.](../media/workflow-teams-action11.gif)
+
 1. Leave **Sensitivity** and **Advanced parameters** unchanged.
 
 1. Verify that **Task Summary** appears in the **Body** field.
 
-   ![Screenshot of Mail action in the workflow.](../media/workflow-teams-action1.png)
+   ![Screenshot of Mail action in the workflow.](../media/workflow-teams-action11.png)
 
 ### Task 2.3 - Response action
 
