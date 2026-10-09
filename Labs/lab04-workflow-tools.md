@@ -33,7 +33,7 @@ This exercise will take approximately **60** minutes to complete.
 ## High-level lab steps
 
 - Create an agent using Copilot
-- Create a workflow to send a message to Microsoft Teams
+- Create a workflow to send a message to Mail
 - Add the workflow as a tool to the agent
 - Create a workflow and add to a topic
   
@@ -42,7 +42,7 @@ This exercise will take approximately **60** minutes to complete.
 - Have a Microsoft Entra ID account
 - Have a Copilot Studio license or have signed up for a [free trial](https://go.microsoft.com/fwlink/p/?linkid=2252605).
 - Have access to a Power Platform environment and a solution where you can create agents and related assets.
-- Have access to Microsoft Teams and permission to post messages to a Teams channel.
+- Have access to Microsoft Outlook (Mail) and permission to send email messages.
 - You can use:
   - the environment and **Lab Exercises** solution created in the **ILT Setup** lab, or
   - your own existing environment and solution.
@@ -93,11 +93,11 @@ In this exercise, you will create a new agent using natural language to analyze,
 
 ## Exercise 2 - Create a workflow tool
 
-In this exercise, you create a workflow that sends a message to Microsoft Teams. You will add this workflow to the agent.
+In this exercise, you create a workflow that sends a message to Mail. You will add this workflow to the agent.
 > [!NOTE]
 > Agent responses, orchestration behavior, and tool usage may vary slightly from the screenshots shown in this lab depending on your tenant configuration and model behavior.
 
-### Task 2.1 – Create the Send Message to Teams workflow
+### Task 2.1 – Create the Send Message to Mail workflow
 
 1. In Copilot Studio, select **Tools** in the left-hand navigation.
 
@@ -129,21 +129,21 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
    ![Screenshot of details properties of the flow.](../media/workflow-details.png)
 
-1. Replace the default **Flow name** value `Untitled` with `Send Summary to Teams`.
+1. Replace the default **Flow name** value `Untitled` with `Send Summary to Mail`.
 
-1. Replace the default **Description** text with `Post a message to Teams with the summary of the task analysis`.
+1. Replace the default **Description** text with `Send a mail with the summary of the task analysis`.
 
 1. Select **Save**.
 
-### Task 2.2 - Post to Teams action
+### Task 2.2 - Send mail action
 
 1. Select the **Designer** tab.
 
 1. Select the **+** icon between the two steps in the workflow to insert a new action.
 
-1. Enter `Post message in a chat or channel` in the **Search** field.
+1. Enter `Send an email (V2)` in the **Search** field.
 
-1. Select the **Post message in a chat or channel** action.
+1. Select the **Send an email (V2)** action.
 
 1. Select **Sign in**.
 
@@ -154,17 +154,13 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. If the **Confirmation required** dialog appears, select the **I have verified this request and trust the source** checkbox, then select **Allow access**.
 
-1. For **Post as**, select **Flow bot**.
+1. For **To**, enter your own email address.
 
-1. For **Post in**, select **Channel**.
+1. For **Subject**, enter **Task Analysis Summary**.
 
-1. For **Team**, select **Enter custom value** and enter **Leadership**.
+1. For **Body**, use **Dynamic Content** to select **Task Summary**. You can do this by typing `/` in the box and selecting **Insert dynamic content**.
 
-1. For **Channel**, select **Enter custom value** and enter **General**.
-
-1. For **Message**, use **Dynamic Content** to select **Task Summary**. You can do this by typing `/` in the box and selecting **Insert dynamic content**.
-
-   ![Screenshot of Teams action in the workflow.](../media/workflow-teams-action.png)
+   ![Screenshot of Mail action in the workflow.](../media/workflow-teams-action.png)
 
 ### Task 2.3 - Response action
 
@@ -174,7 +170,7 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. For *Enter a name*, enter `Message`.
 
-1. For **Enter a value to respond with**, type `/`, select **Insert dynamic content**, and then select **Message link** from the Teams action.
+1. For **Enter a value to respond with**, enter `Summary sent to mail`.
 
    ![Screenshot of the response action in the workflow.](../media/workflow-response-action.png)
 
@@ -198,18 +194,18 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
    ![Screenshot of adding a workflow as a tool.](../media/workflow-add-tool.png)
 
-1. Select the **Send Summary to Teams** workflow.
+1. Select the **Send Summary to Mail** workflow.
 
 1. Select **Add and configure**.
 
-1. In the **Details** section, for **Description**, replace `Send Summary to Teams` by entering `Sends a summary of the completed task analysis to a Microsoft Teams channel`.
+1. In the **Details** section, for **Description**, replace `Send Summary to Mail` by entering `Sends a summary of the completed task analysis by mail`.
 
 1. Expand **Additional details**, then select and enter the following:
 
    - **When this tool may be used**: Agent may use this tool at any time
    - **Ask the end user before running**: No
    - **Credentials to use**: End user credentials
-   - **Description**: `Please sign in to notify Teams`
+   - **Description**: `Please sign in to send mail`
 
 1. In the **Inputs** section, for *Fill using* select **Dynamically fill with AI**.
   
@@ -232,24 +228,24 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
 1. Select all of the existing text in the **Instructions** box and delete it.
 
-1. Enter the following instructions. Where the text shows a placeholder such as `<Send Summary to Teams>`, don't type the placeholder. Instead, type `/`, and then select the **Send Summary to Teams** tool from the list so that the tool is inserted as a reference:
+1. Enter the following instructions. Where the text shows a placeholder such as `<Send Summary to Mail>`, don't type the placeholder. Instead, type `/`, and then select the **Send Summary to Mail** tool from the list so that the tool is inserted as a reference:
 
   ```prompt
    # Purpose
-   The purpose of this agent is to analyze, categorize, and prioritize tasks, and to send a summary of the analysis to a Microsoft Teams channel.
+   The purpose of this agent is to analyze, categorize, and prioritize tasks, and to send a summary of the analysis by mail.
 
    # General guidelines
    - Maintain a professional and supportive tone.
    - Always use the topics and tools listed below. Don't answer from your own knowledge.
 
    # Skills
-   - Use the <Send Summary to Teams> tool to post a summary of the task analysis to Microsoft Teams.
+   - Use the <Send Summary to Mail> tool to send a summary of the task analysis by mail.
 
    # Step-by-step instructions
    1. Analyze tasks
       - Categorize and prioritize the tasks that the user provides.
    2. Send the results
-      - Use the <Send Summary to Teams> tool when the task analysis is complete.
+      - Use the <Send Summary to Mail> tool when the task analysis is complete.
    ```
 
    ![Screenshot of referencing the workflow tool in the agent instructions.](../media/workflow-add-tool-to-instructions.png)
@@ -270,15 +266,15 @@ In this exercise, you create a workflow that sends a message to Microsoft Teams.
 
    `Analyze this list of tasks 1. Build an agent, 2. Test an agent, 3. Deploy an agent`
 
-1. If prompted to connect to Microsoft Teams, select **Allow**.
+1. If prompted to connect to Office 365 Outlook, select **Allow**.
 
    ![Screenshot of the workflow tool used when testing the agent.](../media/workflow-test-agent-tool.png)
 
-1. In a new browser tab, navigate to `https://teams.cloud.microsoft/` and sign in if prompted.
+1. In a new browser tab, navigate to `https://outlook.office.com/mail` and sign in if prompted.
 
-1. Navigate to the Team and channel you selected earlier in the workflow and verify the task analysis summary was posted to the Teams channel.
+1. Open the inbox of the email address you entered earlier in the workflow and verify the task analysis summary was received in the mail.
 
-   ![Screenshot of the message in Teams.](../media/workflow-test-agent-teams.png)
+   ![Screenshot of the message in Mail.](../media/workflow-test-agent-teams.png)
 
 ## Exercise 3 - Create a workflow tool that analyzes an Excel file in a topic
 
@@ -538,7 +534,7 @@ In this exercise, you will use Copilot to create a topic from a description, cre
 1. The **Priority Tasks** topic will be shown.
 
    > [!NOTE]
-   > If the agent answers without opening the **Priority Tasks** topic, verify on the **Overview** tab that the agent instructions reference the **Priority Tasks** topic and the **Send Summary to Teams** tool as inserted references, and then start a new test session.
+   > If the agent answers without opening the **Priority Tasks** topic, verify on the **Overview** tab that the agent instructions reference the **Priority Tasks** topic and the **Send Summary to Mail** tool as inserted references, and then start a new test session.
 
 1. Select **Medium**.
 
@@ -548,11 +544,11 @@ In this exercise, you will use Copilot to create a topic from a description, cre
 
    ![Screenshot of the workflow tool used when testing the agent.](../media/workflow-test-topic-tool.png)
 
-1. In a new browser tab, navigate to `https://teams.cloud.microsoft/` and sign in if prompted.
+1. In a new browser tab, navigate to `https://outlook.office.com/mail` and sign in if prompted.
 
-1. Navigate to the Team and channel you selected earlier and review the two tasks posted to the channel.
+1. Open the inbox of the email address you entered earlier and review the mail containing the two tasks.
 
-   ![Screenshot of the message in Teams.](../media/workflow-test-topic-teams.png)
+   ![Screenshot of the message in Mail.](../media/workflow-test-topic-teams.png)
 
 ## Summary
 
