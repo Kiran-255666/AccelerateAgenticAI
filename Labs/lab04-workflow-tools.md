@@ -296,7 +296,7 @@ In this exercise, you create a workflow that sends a message to Mail. You will a
 
    ![Screenshot of the message in Mail.](../media/workflow-test-agent-mail.png)
 
-> Note: 
+> [!NOTE] 
 >
 > The formatting of the email may vary. **Focus on verifying that the workflow successfully sent the task analysis summary to the specified email address** .
 
