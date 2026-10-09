@@ -151,22 +151,27 @@ In this exercise, you create a workflow that sends a message to Mail. You will a
 
 1. Select the **Send an email (V2)** action.
 
+1. In the Connection name field, enter **`OutlookConnection`**.
+
+1. Verify that Authentication Type is set to Office 365 (sign in as user).
+
 1. Select **Sign in**.
 
-> [!NOTE]
-> If you receive the error "Failed to create OAuth connection: ClientWarning: The browser has blocked the connection authentication popup window", select the **pop-up blocked** icon in the browser address bar and then select **Always allow pop-ups and redirects from `https://copilotstudio.microsoft.com`**.
-
-1. Select your account.
+1. Select the account provided by your instructor.
 
 1. If the **Confirmation required** dialog appears, select the **I have verified this request and trust the source** checkbox, then select **Allow access**.
 
-1. For **To**, enter your own email address.
+1. **For To**, enter your email address or the account provided by your instructor.
 
-1. For **Subject**, enter **Task Analysis Summary**.
+1. **For Subject**, enter **Task Analysis Summary**.
 
-1. For **Body**, use **Dynamic Content** to select **Task Summary**. You can do this by typing `/` in the box and selecting **Insert dynamic content**.
+1. In the **Body** field, enter `/`, click **Insert dynamic content**, and select **Task Summary** from the dynamic content list.
 
-   ![Screenshot of Mail action in the workflow.](../media/workflow-teams-action.png)
+1. Leave **Sensitivity** and **Advanced parameters** unchanged.
+
+1. Verify that **Task Summary** appears in the **Body** field.
+
+   ![Screenshot of Mail action in the workflow.](../media/workflow-teams-action1.png)
 
 ### Task 2.3 - Response action
 
@@ -178,8 +183,6 @@ In this exercise, you create a workflow that sends a message to Mail. You will a
 
 1. For **Enter a value to respond with**, enter `Summary sent to mail`.
 
-   ![Screenshot of the response action in the workflow.](../media/workflow-response-action.png)
-
 1. Select **Save draft** near the upper-right of the page.
 
 1. Select **Publish** near the upper-right of the page.
@@ -190,7 +193,7 @@ In this exercise, you create a workflow that sends a message to Mail. You will a
 
 1. Select **Agents** from the left navigation pane.
 
-1. Open the **Task Analysis and Prioritization Agent** agent.
+1. Open the **Task Agent** agent by clicking it.
 
 1. Select the **Tools** tab.
 
@@ -234,7 +237,7 @@ In this exercise, you create a workflow that sends a message to Mail. You will a
 
 1. Select all of the existing text in the **Instructions** box and delete it.
 
-1. Enter the following instructions. Where the text shows a placeholder such as `<Send Summary to Mail>`, don't type the placeholder. Instead, type `/`, and then select the **Send Summary to Mail** tool from the list so that the tool is inserted as a reference:
+1. Enter the following instructions. 
 
   ```prompt
    # Purpose
@@ -254,9 +257,11 @@ In this exercise, you create a workflow that sends a message to Mail. You will a
       - Use the <Send Summary to Mail> tool when the task analysis is complete.
    ```
 
-   ![Screenshot of referencing the workflow tool in the agent instructions.](../media/workflow-add-tool-to-instructions.png)
+1. Where the text shows a placeholder such as `<Send Summary to Mail>`, edit type the placeholder. By typing `/`, and then select the **Send Summary to Mail** tool from the list so that the tool is inserted as a reference:
 
-5. Select **Save**.
+   ![Screenshot of referencing the workflow tool in the agent instructions.](../media/workflow-add-tool-to-instructions1.gif)
+
+1. Select **Save**.
 
 ### Task 2.6 - Test the workflow tool in the agent
 
