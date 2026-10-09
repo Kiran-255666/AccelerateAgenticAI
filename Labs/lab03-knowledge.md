@@ -463,13 +463,28 @@ In this exercise, you will publish the agent to Microsoft Teams, first ensuring 
 
 9. Select **Open** and wait for the agent to load in Teams.
 
-> [!TIP] 
-> 
-> Before testing the agent in Microsoft Teams, return to Copilot Studio and update the authentication method to Authenticate with Microsoft. Select Save, Save again, then Publish the agent. After publishing is complete, return to Microsoft Teams and test the agent.
+### Task 5.4 - Configure Authentication and Test the Agent in Microsoft Teams
 
-10. Test the published agent in Microsoft Teams. For example, ask: **`What can I claim for expenses?`**
+1. Return to **Copilot Studio**.
+2. Select **Settings**.
+3. Under **Security**, select **Authentication**.
+4. Select **Authenticate with Microsoft**.
+5. Select **Save**. Then, select **Save** again.
+6. Close pane by selecting the **X** icon.
+7. Select **Publish** to open the **Publish this agent** dialog box.
+8. Select **Publish** again to confirm.
+9. Wait for publishing to complete.
+10. Return to **Microsoft Teams**.
+11. Open the published agent and test it by asking:
 
+    `What can I claim for expenses?`
+
+    
     ![Screenshot of the agent in Teams.](../media/channel-teams-test.png)
+
+> [!NOTE]
+>
+> Authentication was temporarily set to **No authentication** earlier in this lab to simplify the initial Teams deployment. Before testing the final published agent, switch the authentication method back to **Authenticate with Microsoft** and republish the agent.
 
 ## Summary
 
