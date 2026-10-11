@@ -465,7 +465,7 @@ In this exercise, you will use Copilot to create a topic from a description, cre
 
 1. Select **Agents** from the left navigation pane.
 
-1. Open the **Task Analysis** agent.
+1. Open the **Task Agent** agent.
 
 1. Select the **Topics** tab.
 
@@ -491,7 +491,7 @@ In this exercise, you will use Copilot to create a topic from a description, cre
 
 1. Select **Agents** from the left navigation pane.
 
-1. Open the **Task Angent** agent.
+1. Open the **Task Agent** agent.
 
 1. Select the **Tools** tab.
 
