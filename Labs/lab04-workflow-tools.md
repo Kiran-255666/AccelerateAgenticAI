@@ -389,9 +389,9 @@ In this exercise, you will use Copilot to create a topic from a description, cre
 
 1. In Copilot Studio, in the left-hand navigation, select **Tools**.
 
-1. Select **+ Add a tool**. In some experiences, this option appears as **+ New tool**.
+1. Select **+ New tool**.
 
-1. In the **Add tool** dialog, select the **Agent flow** tile.
+1. In the **New tool** dialog, select the **Agent flow** tile.
 
 1. Verify that the **When an agent calls the flow** trigger and the **Respond to the agent** action have been added to the workflow.
 
@@ -399,7 +399,7 @@ In this exercise, you will use Copilot to create a topic from a description, cre
 
 1. Select **Text**.
 
-1. Enter `Priority` for *Input* and `Priority of Tasks` for *Please enter your input*.
+1. Replace the default **Input** name with **`Priority`** and replace **Please enter your input** with **`Priority of Tasks`**.
 
 1. Select **Save draft** near the upper-right of the page.
 
@@ -409,7 +409,7 @@ In this exercise, you will use Copilot to create a topic from a description, cre
 
 1. In the **Details** pane, update **Flow name** to `Get Task List`.
 
-1. For **Description**, enter `Retrieve a list of tasks with a matching priority`.
+1. For **Details** pane, update **Description** to `Retrieve a list of tasks with a matching priority`.
 
 1. Select **Save**.
 
@@ -417,13 +417,13 @@ In this exercise, you will use Copilot to create a topic from a description, cre
 
 1. Select the **+** icon between the two steps in the workflow to insert a new action.
 
-1. Enter `Excel` in the **Search** field and select **See more** for the **Excel Online (Business)** connector.
+1. In the **Search** field, enter `List rows present in a table`.
 
-1. Select the **List rows present in a table** action.
+2. Select the **List rows present in a table** action under **Excel Online (Business)**.
 
 1. Select **Sign in** to create a connection.
 
-1. In the **Sign into your account** dialog, select the account you are using for this lab environment (such as **MOD Administrator**). If prompted, select the **I have verified this request and trust the source** checkbox, and select **Allow access**.
+1. In the **Sign into your account** dialog, select the account you are using for this lab environment.
 
 1. For **Location** select **OneDrive for Business**.
 
@@ -441,7 +441,7 @@ In this exercise, you will use Copilot to create a topic from a description, cre
 
 1. Move the cursor between the two single quotes and use **Dynamic content** to insert the **Priority** input parameter.
 
-   ![Screenshot of Excel filter in the workflow.](../media/onedrive-action-filter.png)
+   ![Screenshot of Excel filter in the workflow.](../media/onedrive-action-filter.gif)
 
 1. Select the **Respond to the agent** node in the authoring canvas and select **+ Add an output**.
 
@@ -452,6 +452,8 @@ In this exercise, you will use Copilot to create a topic from a description, cre
 1. For *Enter a value to respond with*, select the field, and then select the **Expression** (**fx**) option. Enter the following expression to convert the returned rows into text that matches the **Text** output type, and then select **Add**:
 
    `string(outputs('List_rows_present_in_a_table')?['body/value'])`
+   
+   ![Screenshot of Excel filter in the workflow.](../media/onedrive-action-filter2.gif)
 
 1. Select **Save draft** near the upper-right of the page.
 
